@@ -1,0 +1,9 @@
+第一:javascript:只有在函数内有效
+     document.getElementsbyId("设置DIV").innerHtml来设置值
+第二:获取select的值:select.options[select.selectIndex].txt
+第三:executeQuery:产生单个结果
+            Update:产生返回影响的行
+	        cute:返回多个结果集
+第四:enctype="multipart/form-data" 是以二进制的文件进行传递的 用于上传文件  （不能request）
+第五:小心字符
+第六:com.mysql.jdbc.Driver

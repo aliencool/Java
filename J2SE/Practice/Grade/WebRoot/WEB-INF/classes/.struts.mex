@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="excel" location="10,10" size="225,140">
+    <action name="Up_Excel" location="65,47" size="150,83">
+      <result name="tw">
+        <resourceEdge source="tw" routing="0" target="UpLoad_tw.jsp" />
+      </result>
+      <result name="com">
+        <resourceEdge source="com" routing="0" target="UpLoad_com.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="jfre_c_zhu" location="350,50" size="170,71">
+    <action name="jfree_com_zhu" location="10,20" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="jfre_c_zhe" location="350,200" size="170,71">
+    <action name="jfree_com_zhe" location="10,20" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="jfre_t_zhe" location="50,350" size="170,71">
+    <action name="jfree_tw_zhe" location="10,20" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="jfre_t_zhu" location="350,350" size="170,71">
+    <action name="jfree_tw_zhu" location="10,20" size="150,41">
+      <result name="success" />
+    </action>
+  </package>
+  <package name="choice_t" location="50,500" size="170,92">
+    <action name="Choice_tw" location="10,20" size="150,62">
+      <result name="two">
+        <resourceEdge source="two" routing="0" target="graph_tw.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <package name="choice_c" location="350,500" size="170,92">
+    <action name="Choice_comm" location="10,20" size="150,62">
+      <result name="comm">
+        <resourceEdge source="comm" routing="0" target="graph_com.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="graph.jsp" path="graph.jsp" location="100,205" size="150,55" />
+  <webResource name="graph.jsp" path="/graph.jsp" location="50,650" size="150,55" />
+  <webResource name="index.jsp" path="/index.jsp" location="200,650" size="150,55" />
+  <webResource name="showplot.jsp" path="/showplot.jsp" location="350,650" size="150,55" />
+  <webResource name="UpLoad_tw.jsp" path="/UpLoad_tw.jsp" location="500,650" size="150,55" />
+  <webResource name="UpLoad_com.jsp" path="/UpLoad_com.jsp" location="50,800" size="150,55" />
+  <webResource name="showplot_zhe.jsp" path="/showplot_zhe.jsp" location="200,800" size="150,55" />
+  <webResource name="showplot_zhu.jsp" path="/showplot_zhu.jsp" location="350,800" size="150,55" />
+  <webResource name="graph_tw.jsp" path="/graph_tw.jsp" location="500,800" size="150,55" />
+  <webResource name="graph_com.jsp" path="/graph_com.jsp" location="50,950" size="150,55" />
+</Struts2Diagram>
+

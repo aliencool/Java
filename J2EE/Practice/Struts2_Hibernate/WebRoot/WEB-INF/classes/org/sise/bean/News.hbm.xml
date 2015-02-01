@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="org.sise.bean">
+	<class name="News">
+		<id name="id" unsaved-value="0" type="int">
+			<column name="id"/>
+			<generator class="native"/>
+		</id>
+	<property name="title" column="title"/>
+	<property name="content" column="content" type="text"/>
+	<property name="source" column="source"/>
+	<property name="issue_time" column="issue_time" type="date"/>
+	<property name="imag_url" column="imag_url" type="string"/>
+	</class>
+
+
+
+</hibernate-mapping>

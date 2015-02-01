@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="Loginpack" location="0,0" size="0,0">
+    <action name="login" location="0,0" size="0,0">
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="index.jsp" />
+      </result>
+      <result name="success">
+        <resourceEdge source="success" routing="1" target="welcome.jsp">
+          <bendpoint location="278,112" dim1="142,0" dim2="-122,12" />
+          <bendpoint location="278,102" dim1="142,-10" dim2="-122,2" />
+        </resourceEdge>
+      </result>
+    </action>
+  </package>
+  <webResource name="index.jsp" path="/index.jsp" location="0,0" size="0,0" />
+  <webResource name="welcome.jsp" path="/welcome.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

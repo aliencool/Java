@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.courtier.po">
+	<class name="Report" table="Report">
+	
+		<id name="r_Id" type="int">
+			<column name="r_Id" length="10"/>
+			<generator class="native"/>
+		</id>
+	
+		<property name="u_Name" type="string" column="u_Name"/>
+		<property name="r_Title" type="string" length="20" column="r_Title"/>
+	    <property name="r_Content" type="string" length="40" column="r_Content"/>
+	    <property name="r_Status" type="int" length="2" column="r_Status"/>
+	    
+	
+	</class>	
+
+</hibernate-mapping>

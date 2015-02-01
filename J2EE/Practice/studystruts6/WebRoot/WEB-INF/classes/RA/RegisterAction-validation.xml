@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.2//EN" "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<!-- *************************************************************************************************** -->
+<!-- 一个<field>表示对Action中的一个属性的校验，它的name值要与Action的属性名一致 -->
+<!-- <field-validator/>表示对属性校验的方式 -->
+<!-- requiredstring用来校验String的属性是必填的，此外都要用required来验证必填 -->
+<!-- 校验失败时，即用户输入的信息不符合要求时，就会显示<message/>中设定的提示信息 -->
+<!-- *************************************************************************************************** -->
+<!-- 而<param name="trim">true</param>则表示忽略掉字符串左右两边出现的空格 -->
+<!-- 事实上requiredstring会自动将字符串左右两边的空格去掉，所以它可写可不写 -->
+<!-- 因为在RequiredStringValidator源码中的doTrim属性默认的就是TRUE -->
+<!-- 虽然RequiredStringValidator中的属性名是doTrim，但不可以写成name="doTrim" -->
+<!-- 因为它真正的值取决于public void setTrim(boolean trim)中的参数的值 -->
+<!-- *************************************************************************************************** -->
+<!-- <field-validator/>还有一个short-circuit属性，用来表示短路，默认值为FALSE -->
+<!-- 对于逻辑与来说，前面如果为假，后面就不再判断了，直接短路 -->
+<!-- 对于逻辑或来说，前面如果为真，后面也不再判断了，直接短路 -->
+<!-- 所以，如果short-circuit的值为TRUE的话 -->
+<!-- 当username的requiredstring验证失败，就不再执行stringlength验证了 -->
+<!-- *************************************************************************************************** -->
+<!-- 可以使用stringlength验证字符串的长度，并用minLength和maxLength限定长度范围 -->
+<!-- 运行时${minLength}就会自动被6替换掉，${maxLength}就会被10替换掉 -->
+<!-- 也可以利用<message/>进行国际化，如<message key="username.xml.invalid"/> -->
+<!-- 无论是字段验证还是非字段验证，产生的<message/>信息都会放到FieldError中 -->
+<!-- 所以需要在前台页面中使用<s:fielderror/>来显示错误提示信息 -->
+<!-- *************************************************************************************************** -->
+<validators>
+	<field name="username">
+		<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>username should not be blank</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">10</param>
+			<message>username should be between ${minLength} and ${maxLength}</message>
+		</field-validator>
+	</field>
+	
+	<field name="password">
+		<field-validator type="requiredstring">
+			<message>password should not be blank</message>
+		</field-validator>
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">10</param>
+			<message>password should be between ${minLength} and ${maxLength}</message>
+		</field-validator>
+	</field>
+	<field name="password1">
+		<field-validator type="requiredstring">
+			<message>password1 should not be blank</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+			<param name="expression"><![CDATA[password=password1]]></param>
+			<message>not equal</message>
+		</field-validator>
+		
+		<field-validator type="stringlength">
+			<param name="minLength">6</param>
+			<param name="maxLength">10</param>
+			<message>password should be between ${minLength} and ${maxLength}</message>
+		</field-validator>
+	</field>
+	<field name="age">
+		<field-validator type="int">
+			<param name="min">1</param>
+			<param name="max">150</param>
+			<message>age should be between ${min} and ${max}</message>
+		</field-validator>
+	</field>
+	<field name="birthday">
+		<field-validator type="required">
+			<message key="birth"/>
+		</field-validator>
+		<field-validator type="date">
+			<param name="min">2002-09-09</param>
+			<param name="max">2003-08-28</param>
+			<message>birthday should be between ${min} and ${max}</message>
+		</field-validator>
+	</field>
+</validators>
+<!-- **********关于repassword属性的校验，与password类似，故略去********** -->
+<!-- **********关于graduation属性的校验，与birthday类似，故略去********** -->

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context" 
+ xmlns:aop="http://www.springframework.org/schema/aop"
+ xmlns:tx="http://www.springframework.org/schema/tx"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                     http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+                     http://www.springframework.org/schema/tx 
+                     http://www.springframework.org/schema/tx/spring-tx.xsd 
+                     http://www.springframework.org/schema/aop 
+                     http://www.springframework.org/schema/aop/spring-aop.xsd
+                     http://www.springframework.org/schema/context
+					 http://www.springframework.org/schema/context/spring-context-4.0.xsd
+                     "> 
+  <context:annotation-config/>                   
+                     
+     <!-- DataSource -->
+	<bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+	<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+	<property name="url" value="jdbc:mysql://localhost:3306/blog"></property>
+	<property name="username" value="root"></property>
+	<property name="password" value="123"></property>
+	
+	</bean>
+                     
+     	<!-- SessionFactory -->
+	<bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+	<property name="dataSource"><ref bean="dataSource"></ref></property>
+	
+	<property name="mappingResources">
+	
+    <list>
+		<value>cn/courtier/po/MessageBox.hbm.xml</value>
+		<value>cn/courtier/po/Recommend.hbm.xml</value>
+		<value>cn/courtier/po/Report.hbm.xml</value>
+		<value>cn/courtier/po/Send_Message.hbm.xml</value>
+		<value>cn/courtier/po/Category.hbm.xml</value>
+		<value>cn/courtier/po/Bolguser.hbm.xml</value>
+		<value>cn/courtier/po/BlogContent.hbm.xml</value>
+    </list>
+    
+  	</property>
+	
+	
+	<property name="hibernateProperties">
+	<props>
+	<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+	<prop key="hibernate.hbm2ddl.auto">update</prop>
+	</props>
+	</property>
+	</bean>
+	
+	<!-- Transaction -->
+	<bean id="transactionManager" class="org.springframework.orm.hibernate4.HibernateTransactionManager"> 
+	<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	
+	<tx:annotation-driven transaction-manager="transactionManager"></tx:annotation-driven>                 
+
+          
+       
+     <!-- entity bean -->       
+       <bean name="page" class="cn.courtier.ActionBean.ActionPage"/>
+     
+     <!-- until bean -->
+      <bean class="cn.courtier.Until.Get_Session" name="session_All"/>
+      
+      
+      <!-- Dao bean -->
+      <!-- show -->
+      <bean class="cn.courtier.blog.Im.Im_Show_Operation" name="show_operation"/>
+     <bean class="cn.courtier.blog.Im.Im_Show_Service" name="show_Service"/>
+     	
+     <!-- admin -->
+      <bean class="cn.courtier.admin.Im.Im_Crud_Blog" name="crub_operation"/>
+     <bean class="cn.courtier.admin.Im.Im_Crub_Service" name="crub_Service"/>
+     
+     <!-- user -->
+     <bean class="cn.courtier.user.Im.User_Im" name="userIm"/>
+     <bean class="cn.courtier.user.Im.User_Service" name="userService"/>
+     
+     <!-- message -->
+         <bean class="cn.courtier.message.Im.Im_Message" name="messageIm"/>
+     <bean class="cn.courtier.message.Im.Im_Message_Service" name="messageService"/>
+     
+     <!-- action bean -->
+         <bean name="IndexAction" class="cn.courtier.ActionControl.IndexAction" scope="prototype"/>
+         <bean name="NewlistAction" class="cn.courtier.ActionControl.NewlistAction" scope="prototype"/>
+         <bean name="RedirectAction" class="cn.courtier.ActionControl.RedirectAction" scope="prototype"/>
+         <bean name="PageAction" class="cn.courtier.ActionControl.PageAction" scope="prototype"/>
+         <bean name="UserAction" class="cn.courtier.ActionControl.UserAction" scope="prototype"/>
+         <bean name="MessageAction" class="cn.courtier.ActionControl.MessageAction" scope="prototype"/>
+         <bean name="JsonPage" class="cn.courtier.ActionControl.JsonPage" scope="prototype"/>
+</beans>

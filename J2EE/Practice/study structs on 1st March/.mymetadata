@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="study structs on 1st March"
+  id="myeclipse.1393651401553"
+  context-root="/study structs in the  1st March"
+  j2ee-spec="5.0"
+  archive="study structs on 1st March.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

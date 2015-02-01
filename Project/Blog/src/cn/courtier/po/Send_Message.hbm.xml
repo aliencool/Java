@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.courtier.po">
+	<class name="Send_Message" table="Send_Message">
+	
+		<id name="sm_Id" type="int">
+			<column name="sm_Id" length="10"/>
+			<generator class="native"/>
+		</id>
+	
+		<property name="msg_Content" type="string" length="30" column="msg_Content"/>
+			<property name="give_message_name" type="string" length="30" column="give_message_name"/>
+			<property name="image" type="string" length="30" column="image"/>
+	    <property name="send_Time" type="string" length="30"  column="send_Time"/>
+	<property name="flag" type="int" length="2" column="flag"/>
+	
+		 <many-to-one name="save_M" cascade="all"  class="cn.courtier.po.Bloguser"/>
+	
+	</class>	
+
+</hibernate-mapping>

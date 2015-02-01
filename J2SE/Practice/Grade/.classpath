@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/asm-3.3.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/asm-commons-3.3.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/asm-tree-3.3.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/ognl-3.0.6.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/struts2-core-2.3.8.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts5/WebRoot/WEB-INF/lib/xwork-core-2.3.8.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/poi的相关jar包/poi的jar包/poi-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/poi的相关jar包/poi的jar包/poi-examples-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/poi的相关jar包/poi的jar包/poi-excelant-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/poi的相关jar包/poi的jar包/poi-ooxml-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/poi的相关jar包/poi的jar包/poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/poi的相关jar包/poi的jar包/poi-scratchpad-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/poi的相关jar包/poi的jar包/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/dom4j.jar"/>
+	<classpathentry kind="lib" path="H:/jfreechart-1.0.9.jar"/>
+	<classpathentry kind="lib" path="H:/jcommon-1.0.15.jar"/>
+	<classpathentry kind="lib" path="H:/Material/编程/struts-2.3.16-all/struts-2.3.16/lib/struts2-jfreechart-plugin-2.3.16.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/ZH_4/WebRoot/WEB-INF/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/ZH_4/WebRoot/WEB-INF/lib/standard.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

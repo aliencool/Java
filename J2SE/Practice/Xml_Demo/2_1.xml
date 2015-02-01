@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<directory>
+	<employee xmlns:employee="http://www.myweb.com/employee">
+		<family:name>mr.li</family:name>
+		<employee:age>10</employee:age>
+		<employee:department>administer</employee:department>
+		<employee:telephone>110-88888</employee:telephone>
+		<relative xmlns:family="http://www.myweb.com/family">
+			<family:name>mr.xu</family:name>
+			<family:telephone>110-888889</family:telephone>
+		</relative>
+			</employee>
+
+</directory>
+
+<!--
+熟悉命名空间的范畴，给职工张小三的姓名元素
+添加family命名空间，用IE浏览器浏览，出现什么
+问题？
+答：the name is no defined
+
+-->

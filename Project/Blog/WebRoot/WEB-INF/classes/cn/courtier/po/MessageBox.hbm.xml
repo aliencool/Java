@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.courtier.po">
+	<class name="MessageBox" table="MessageBox">
+	
+		<id name="m_Id" type="int">
+			<column name="m_Id" length="50"/>
+			<generator class="native"/>
+		</id>
+	
+		<property name="reply_Time" type="string" column="reply_Time"/>
+		<property name="reply_Content" type="string" length="300" column="reply_Content"/>
+	    <property name="u_Type" type="int" length="2" column="u_Type"/>
+	    <property name="reply_Status" type="int" length="2"></property>
+	    
+	   <!-- 多条留言对应一个用户 -->
+	    <many-to-one name="u_Id" class="cn.courtier.po.Bloguser"/>
+	
+	</class>	
+
+</hibernate-mapping>

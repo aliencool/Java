@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.courtier.po">
+	<class name="Bloguser" table="Bloguser">
+	
+		<id name="u_Id" type="int">
+			<column name="u_Id" length="50"/>
+			<generator class="native"/>
+		</id>
+	
+		<property name="u_Name" type="string" length="40" column="u_Name"/>
+		<property name="u_Nickname" type="string" length="40" column="u_Nickname"/>
+		<property name="u_Email" type="string" length="40" column="u_Email"/>
+		<property name="u_Password" type="string" length="40" column="u_Password"/>
+		<property name="u_Province" type="string" length="40" column="u_Province"/>
+		<property name="u_City" type="string" length="40" column="u_City"/>
+		<property name="u_Area" type="string" length="40" column="u_Area"/>
+		<property name="u_Birthday" type="string" length="40" column="u_Birthday"/>
+		<property name="u_Sign" type="string" length="40" column="u_Sign"/>
+		<property name="u_Pic" type="string" length="240" column="u_Pic"/>
+		<property name="u_Status" type="int" length="2" column="u_Status"/>
+		<property name="u_LoginTime" type="string" length="40" column="u_LoginTime"/>
+		<property name="u_Power" type="int" length="2" column="u_Power"/>
+		
+		<set name="messages" inverse="true" lazy="false">
+			<key column="save_M"/>
+			<one-to-many class="cn.courtier.po.Send_Message"/>
+		</set>
+	</class>	
+
+</hibernate-mapping>

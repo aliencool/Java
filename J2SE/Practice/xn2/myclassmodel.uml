@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_qb8akM37EdqwVrslYOdUDA" name="myclassmodel">
+  <packagedElement xmi:type="uml:Package" xmi:id="_8XcQsUBqEeOy_rMn9Jxvig" name="GuiOnlien4">
+    <packagedElement xmi:type="uml:Class" xmi:id="_8Xc3wEBqEeOy_rMn9Jxvig" name="GUIServer">
+      <generalization xmi:id="_8YNswUBqEeOy_rMn9Jxvig" general="_8YNswEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8YO64EBqEeOy_rMn9Jxvig" name="jta" visibility="private" type="_8YL3kkBqEeOy_rMn9Jxvig">
+        <ownedComment xmi:id="_8YPh8EBqEeOy_rMn9Jxvig">
+          <body>/** 
+ * @param args
+ */
+</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8YQwEEBqEeOy_rMn9Jxvig" name="jtf" visibility="private" type="_8YL3k0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8YR-MEBqEeOy_rMn9Jxvig" name="jb" visibility="private" type="_8YLQhUBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8YW2sEBqEeOy_rMn9Jxvig" name="jp" visibility="private" type="_8YL3kEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZA-AEBqEeOy_rMn9Jxvig" name="serverSocket" visibility="package" type="_8YARaUBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZCzMEBqEeOy_rMn9Jxvig" name="socket" visibility="package" type="_8YARakBqEeOy_rMn9Jxvig"/>
+      <ownedOperation xmi:id="_8ZEBUEBqEeOy_rMn9Jxvig" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_8ZEBUUBqEeOy_rMn9Jxvig" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ZEBUkBqEeOy_rMn9Jxvig" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ZEBU0BqEeOy_rMn9Jxvig"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_8ZEoYEBqEeOy_rMn9Jxvig" name="listeren" visibility="public"/>
+      <ownedOperation xmi:id="_8ZF2gEBqEeOy_rMn9Jxvig" name="send" visibility="public"/>
+      <ownedOperation xmi:id="_8ZGdkEBqEeOy_rMn9Jxvig" name="accept" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8XeF4EBqEeOy_rMn9Jxvig" name="Tlistener">
+      <generalization xmi:id="_8ZHrsUBqEeOy_rMn9Jxvig" general="_8ZHrsEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZISwEBqEeOy_rMn9Jxvig" name="s" visibility="private" type="_8YARakBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZJg4EBqEeOy_rMn9Jxvig" name="arrayList" visibility="private" type="_8Y8skEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZLWEEBqEeOy_rMn9Jxvig" name="arrayList_other" visibility="private" type="_8Y-hwEBqEeOy_rMn9Jxvig"/>
+      <ownedOperation xmi:id="_8ZL9IEBqEeOy_rMn9Jxvig" name="run" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8Xes8EBqEeOy_rMn9Jxvig" name="GUIClient">
+      <generalization xmi:id="_8ZMkMEBqEeOy_rMn9Jxvig" general="_8YNswEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZNyUEBqEeOy_rMn9Jxvig" name="jta" visibility="public" isStatic="true" type="_8YL3kkBqEeOy_rMn9Jxvig">
+        <ownedComment xmi:id="_8ZPAcEBqEeOy_rMn9Jxvig">
+          <body>/** 
+ * @param args
+ */
+</body>
+        </ownedComment>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8ZQOkEBqEeOy_rMn9Jxvig" name="jcb" visibility="public" isStatic="true" type="_8ZPAcUBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZSDwEBqEeOy_rMn9Jxvig" name="jtf" visibility="private" type="_8YL3k0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZUgAEBqEeOy_rMn9Jxvig" name="user" visibility="public" isStatic="true">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8ZWVMEBqEeOy_rMn9Jxvig" name="jb" visibility="private" type="_8YLQhUBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZYxcEBqEeOy_rMn9Jxvig" name="jb_send" visibility="private" type="_8YLQhUBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZbNsEBqEeOy_rMn9Jxvig" name="jp" visibility="private" type="_8YL3kEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZdC4EBqEeOy_rMn9Jxvig" name="jTree" visibility="public" isStatic="true" type="_8Zcb0EBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZffIEBqEeOy_rMn9Jxvig" name="node" visibility="public" isStatic="true" type="_8YFw9kBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Zmz4EBqEeOy_rMn9Jxvig" name="selectmsg" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:id="_8ZpQIEBqEeOy_rMn9Jxvig" name="socket" visibility="package" type="_8YARakBqEeOy_rMn9Jxvig"/>
+      <ownedOperation xmi:id="_8ZqeQEBqEeOy_rMn9Jxvig" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_8ZqeQUBqEeOy_rMn9Jxvig" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ZqeQkBqEeOy_rMn9Jxvig" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ZqeQ0BqEeOy_rMn9Jxvig"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_8ZrsYEBqEeOy_rMn9Jxvig" name="listeren" visibility="public"/>
+      <ownedOperation xmi:id="_8Zs6gEBqEeOy_rMn9Jxvig" name="send" visibility="public">
+        <ownedParameter xmi:id="_8Zs6gUBqEeOy_rMn9Jxvig" name="text">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_8Zs6gkBqEeOy_rMn9Jxvig" name="id">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:id="_8ZuIoEBqEeOy_rMn9Jxvig" name="accept" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8Xf7EEBqEeOy_rMn9Jxvig" name="test">
+      <ownedOperation xmi:id="_8ZvWwEBqEeOy_rMn9Jxvig" name="main" visibility="public" isStatic="true">
+        <ownedComment xmi:id="_8Zv90EBqEeOy_rMn9Jxvig">
+          <body>/** 
+ * @param args
+ */
+</body>
+        </ownedComment>
+        <ownedParameter xmi:id="_8ZvWwUBqEeOy_rMn9Jxvig" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8ZvWwkBqEeOy_rMn9Jxvig" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8ZvWw0BqEeOy_rMn9Jxvig"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8XgiIEBqEeOy_rMn9Jxvig" name="Clienlistener">
+      <ownedAttribute xmi:id="_8Zwk4UBqEeOy_rMn9Jxvig" name="hashmap" visibility="public" isStatic="true" type="_8Zwk4EBqEeOy_rMn9Jxvig"/>
+      <ownedOperation xmi:id="_8ZxL8EBqEeOy_rMn9Jxvig" name="Get" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_8ZxL8UBqEeOy_rMn9Jxvig" name="key">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_8ZxL8kBqEeOy_rMn9Jxvig" name="return" type="_8YARakBqEeOy_rMn9Jxvig" direction="return"/>
+      </ownedOperation>
+      <ownedOperation xmi:id="_8ZxzAEBqEeOy_rMn9Jxvig" name="Set" visibility="public">
+        <ownedParameter xmi:id="_8ZxzAUBqEeOy_rMn9Jxvig" name="key">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+        <ownedParameter xmi:id="_8ZxzAkBqEeOy_rMn9Jxvig" name="value" type="_8YARakBqEeOy_rMn9Jxvig"/>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8XgiIUBqEeOy_rMn9Jxvig" name="Listener">
+      <generalization xmi:id="_8ZyaEEBqEeOy_rMn9Jxvig" general="_8ZHrsEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8ZzBIEBqEeOy_rMn9Jxvig" name="socket" visibility="private" type="_8YARakBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z0PQEBqEeOy_rMn9Jxvig" name="icon" visibility="private" type="_8YKpckBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z1dYEBqEeOy_rMn9Jxvig" name="cellRenderer" visibility="private" type="_8YKpc0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z2rgEBqEeOy_rMn9Jxvig" name="count" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        <defaultValue xmi:type="uml:LiteralInteger" xmi:id="_8Z2rgUBqEeOy_rMn9Jxvig"/>
+      </ownedAttribute>
+      <ownedOperation xmi:id="_8Z3SkEBqEeOy_rMn9Jxvig" name="run" visibility="public"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8XhJMEBqEeOy_rMn9Jxvig" name="User">
+      <generalization xmi:id="_8Z35oEBqEeOy_rMn9Jxvig" general="_8YNswEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z4gsEBqEeOy_rMn9Jxvig" name="jta" visibility="public" isStatic="true" type="_8YL3kkBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z6V4EBqEeOy_rMn9Jxvig" name="jb_login" visibility="public" isStatic="true" type="_8YLQhUBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z7kAEBqEeOy_rMn9Jxvig" name="jb_clear" visibility="public" type="_8YLQhUBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z8yIEBqEeOy_rMn9Jxvig" name="jp2" visibility="private" type="_8YL3kEBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z-AQEBqEeOy_rMn9Jxvig" name="jl_user" visibility="private" type="_8YLQh0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8Z_1cEBqEeOy_rMn9Jxvig" name="jl_passworld" visibility="private" type="_8YLQh0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8aBDkEBqEeOy_rMn9Jxvig" name="clear" visibility="private" type="_8YLQgkBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8aCRsEBqEeOy_rMn9Jxvig" name="denglu" visibility="private" type="_8YLQgkBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8aDf0EBqEeOy_rMn9Jxvig" name="jbl1" visibility="private" type="_8YLQh0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8aEt8EBqEeOy_rMn9Jxvig" name="jp2_jbl1" visibility="private" type="_8YLQh0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8aF8EEBqEeOy_rMn9Jxvig" name="jp2_jbl2" visibility="private" type="_8YLQh0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8aHxQEBqEeOy_rMn9Jxvig" name="jp2_jtf" visibility="private" isStatic="true" type="_8YL3k0BqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8aI_YEBqEeOy_rMn9Jxvig" name="jp2_jpf" visibility="private" type="_8YL3kUBqEeOy_rMn9Jxvig"/>
+      <ownedAttribute xmi:id="_8aKNgEBqEeOy_rMn9Jxvig" name="jbl2" visibility="private" type="_8YL3kEBqEeOy_rMn9Jxvig"/>
+      <ownedOperation xmi:id="_8aLboEBqEeOy_rMn9Jxvig" name="main" visibility="public" isStatic="true">
+        <ownedParameter xmi:id="_8aLboUBqEeOy_rMn9Jxvig" name="args">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_8aLbokBqEeOy_rMn9Jxvig" value="*"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_8aLbo0BqEeOy_rMn9Jxvig"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8YNswEBqEeOy_rMn9Jxvig" name="JFrame"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_8ZHrsEBqEeOy_rMn9Jxvig" name="Thread"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8X_qUEBqEeOy_rMn9Jxvig" name="java">
+    <packagedElement xmi:type="uml:Package" xmi:id="_8X_qUUBqEeOy_rMn9Jxvig" name="awt">
+      <packagedElement xmi:type="uml:Package" xmi:id="_8X_qUkBqEeOy_rMn9Jxvig" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8X_qU0BqEeOy_rMn9Jxvig" name="ActionEvent"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8X_qVEBqEeOy_rMn9Jxvig" name="ActionListener"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8X_qVUBqEeOy_rMn9Jxvig" name="MouseAdapter"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8X_qVkBqEeOy_rMn9Jxvig" name="MouseEvent"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8X_qV0BqEeOy_rMn9Jxvig" name="WindowAdapter"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8X_qWEBqEeOy_rMn9Jxvig" name="WindowEvent"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YFJ4EBqEeOy_rMn9Jxvig" name="Color"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YKCYEBqEeOy_rMn9Jxvig" name="Container"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YLQgEBqEeOy_rMn9Jxvig" name="BorderLayout"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YLQgUBqEeOy_rMn9Jxvig" name="GridLayout"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YLQgkBqEeOy_rMn9Jxvig" name="Image"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YLQg0BqEeOy_rMn9Jxvig" name="Panel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YLQhEBqEeOy_rMn9Jxvig" name="Toolkit"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_8X_qWUBqEeOy_rMn9Jxvig" name="io">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8X_qWkBqEeOy_rMn9Jxvig" name="BufferedReader"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARYEBqEeOy_rMn9Jxvig" name="BufferedWriter"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARYUBqEeOy_rMn9Jxvig" name="FileOutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARYkBqEeOy_rMn9Jxvig" name="IOException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARY0BqEeOy_rMn9Jxvig" name="InputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARZEBqEeOy_rMn9Jxvig" name="InputStreamReader"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARZUBqEeOy_rMn9Jxvig" name="OutputStream"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARZkBqEeOy_rMn9Jxvig" name="OutputStreamWriter"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARZ0BqEeOy_rMn9Jxvig" name="PrintWriter"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YFw8EBqEeOy_rMn9Jxvig" name="File"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YFw8UBqEeOy_rMn9Jxvig" name="FileInputStream"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_8YARaEBqEeOy_rMn9Jxvig" name="net">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARaUBqEeOy_rMn9Jxvig" name="ServerSocket"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARakBqEeOy_rMn9Jxvig" name="Socket"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARa0BqEeOy_rMn9Jxvig" name="UnknownHostException"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YKpcEBqEeOy_rMn9Jxvig" name="*"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_8YARbEBqEeOy_rMn9Jxvig" name="util">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARbUBqEeOy_rMn9Jxvig" name="ArrayList"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YARbkBqEeOy_rMn9Jxvig" name="Iterator"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YA4cEBqEeOy_rMn9Jxvig" name="Vector"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YEi0EBqEeOy_rMn9Jxvig" name="Map"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YEi0UBqEeOy_rMn9Jxvig" name="Set"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YKpcUBqEeOy_rMn9Jxvig" name="HashMap"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_8YA4cUBqEeOy_rMn9Jxvig" name="javax">
+    <packagedElement xmi:type="uml:Package" xmi:id="_8YA4ckBqEeOy_rMn9Jxvig" name="swing">
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YA4c0BqEeOy_rMn9Jxvig" name="*"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_8YFw8kBqEeOy_rMn9Jxvig" name="event">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8YFw80BqEeOy_rMn9Jxvig" name="TreeSelectionEvent"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8YFw9EBqEeOy_rMn9Jxvig" name="TreeSelectionListener"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_8YFw9UBqEeOy_rMn9Jxvig" name="tree">
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8YFw9kBqEeOy_rMn9Jxvig" name="DefaultMutableTreeNode"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_8YKpc0BqEeOy_rMn9Jxvig" name="DefaultTreeCellRenderer"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YKpckBqEeOy_rMn9Jxvig" name="ImageIcon"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YLQhUBqEeOy_rMn9Jxvig" name="JButton"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YLQhkBqEeOy_rMn9Jxvig" name="JFrame"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YLQh0BqEeOy_rMn9Jxvig" name="JLabel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YL3kEBqEeOy_rMn9Jxvig" name="JPanel"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YL3kUBqEeOy_rMn9Jxvig" name="JPasswordField"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YL3kkBqEeOy_rMn9Jxvig" name="JTextArea"/>
+      <packagedElement xmi:type="uml:DataType" xmi:id="_8YL3k0BqEeOy_rMn9Jxvig" name="JTextField"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_8Y8skEBqEeOy_rMn9Jxvig" name="ArrayList&lt;Socket>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_8Y-hwEBqEeOy_rMn9Jxvig" name="ArrayList&lt;String>"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_8ZPAcUBqEeOy_rMn9Jxvig" name="JComboBox"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_8Zcb0EBqEeOy_rMn9Jxvig" name="JTree"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_8ZgtQEBqEeOy_rMn9Jxvig" name="JSplitPane"/>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_8Zwk4EBqEeOy_rMn9Jxvig" name="HashMap&lt;String,Socket>"/>
+</uml:Model>

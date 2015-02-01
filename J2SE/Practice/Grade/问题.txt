@@ -1,0 +1,5 @@
+调用:
+1:加包
+2:setjfree
+3:img 直接action
+4:继承jfreechart-default

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.courtier.po">
+	<class name="BlogContent" table="BlogContent" dynamic-update="true">
+	
+		<id name="log_Id" type="int">
+			<column name="log_Id"/>
+			<generator class="native"/>
+		</id>
+	
+		<property name="title" type="string" length="40" column="title"/>
+		<property name="content" type="string" length="2000" column="content"/>
+	    <property name="send_Time" type="string" length="30"  column="send_Time"/>
+	    <property name="correct_Time" type="string" length="30"   column="correct_Time"/>
+	    <property name="img_Name" type="string" length="40" column="img_Name"/>
+	    <property name="flag" type="int" length="2" column="flag"/>
+	    <property name="click" type="int" length="5" column="click"/>
+	    <property name="award" type="int" length="5" column="award"/>
+	    
+	    <!-- 查找文章，不一定要用他们 -->
+	    <many-to-one name="bloguser" class="cn.courtier.po.Bloguser"/>
+		<many-to-one name="category" class="cn.courtier.po.Category"/>
+	
+	</class>	
+
+</hibernate-mapping>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+ xmlns:context="http://www.springframework.org/schema/context"     
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-4.0.xsd 
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-4.0.xsd">
+ 
+	<!-- 如果是对象，使用ref -->
+	<bean id="personImp" class="Set_Contructor.copy.Person_Imp"/>
+	
+	
+	<!-- context:annotation-->
+	<context:annotation-config/>
+	
+	
+	<bean id="ps" class="Set_Contructor.copy.PersonService"/>
+	
+		
+		<!-- list 注入 -->
+	<!--  	<property name="list">
+			<list>
+				<value>1</value>
+				<value>2</value>
+				<value>3</value>
+			</list>
+		</property>-->
+		
+		<!-- Map 后entry -->
+		<!-- <property name="map">
+			<map>
+				<entry key="1" value="1"/>
+				<entry key="2" value="2"/>
+				<entry key="3" value="3"/>
+			</map>
+		</property>-->
+		
+		
+		<!-- property  有key 没有value-->
+		<!-- <property name="prope">
+			<props>
+				<prop key="1">1</prop>
+				<prop key="2">2</prop>
+			</props>
+		
+		</property>-->
+	<!-- </bean>-->
+	
+	
+	<!-- <context:component-scan base-package="Set_Contructor.copy"/>-->
+	
+	
+</beans>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    
+  <struts>
+  <!-- 是name 不是type 少个extends -->
+  	<package name="excel" extends="struts-default"  >
+  		<action name="Up_Excel" class="org.grade.control.Analysis_Excel">
+  			<result name="tw" >/UpLoad_tw.jsp</result>
+  			<result name="com">/UpLoad_com.jsp</result>
+  			<result name="input">/index.jsp</result>
+  		</action>
+  	</package>
+
+  		
+	<!-- 显示图 -->
+		  	<!-- 继承问题 --><!-- result ~   chart-->
+  	<package name="jfre_c_zhu" extends ="jfreechart-default">
+  		<action name="jfree_com_zhu" class="org.grade.graph.Comm_graph_zhu">
+  			<result  type="chart">
+  				<param name="width">1024</param>
+  				<param name="height">400</param>
+  			</result>
+
+  		</action>
+  	</package>
+  	
+  		<package name="jfre_c_zhe" extends ="jfreechart-default">
+  		<action name="jfree_com_zhe" class="org.grade.graph.Comm_graph_zhe">
+  			<result   type="chart">
+  				<param name="width">1024</param>
+  				<param name="height">400</param>
+  			</result>
+
+  		</action>
+  	</package>
+  	
+  	
+  	
+  		<package name="jfre_t_zhe" extends ="jfreechart-default">
+  		<action name="jfree_tw_zhe" class="org.grade.graph.two_graph_zhe">
+  				<result type="chart">
+  				<param name="width">600</param>
+  				<param name="height">400</param>
+  				</result>
+  		</action>
+  	</package>
+  	
+  	<package name="jfre_t_zhu" extends ="jfreechart-default">
+  		<action name="jfree_tw_zhu" class="org.grade.graph.two_graph_zhu">
+  				<result type="chart">
+  				<param name="width">600</param>
+  				<param name="height">400</param>
+  				</result>
+  		</action>
+  	</package>
+  	
+
+  	  <!-- 上传选择成功 两组算法-->
+  <package name="choice_t" extends="struts-default">
+  		<action name="Choice_tw" class="org.grade.control.Choice_tw">
+  			<result name="two">/graph_tw.jsp</result>
+  			<result name="input">/index.jsp</result>
+  		</action>
+  	</package>
+ 	  <!-- 上传选择成功 逐步算法 -->
+  <package name="choice_c" extends="struts-default">
+  		<action name="Choice_comm" class="org.grade.control.Choice_comm">
+  			<result name="comm">/graph_com.jsp</result>
+  			<result name="input">/index.jsp</result>
+  		</action>
+  	</package>
+
+  </struts>

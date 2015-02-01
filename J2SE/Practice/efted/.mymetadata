@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="efted"
+  id="myeclipse.1381402590538"
+  context-root="/efted"
+  j2ee-spec="5.0"
+  archive="efted.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

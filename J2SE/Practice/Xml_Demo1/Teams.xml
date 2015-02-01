@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Teams SYSTEM "teams.dtd">
+<Teams>
+  <Team>
+     <Teamname>AC Milan</Teamname>
+     <Country name="Italy"/>
+     <Member>
+        <Tel>123456</Tel>
+        <Email>xx@163.com</Email>
+     </Member>
+  </Team>
+</Teams>

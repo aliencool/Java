@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcahe>
+<!-- 1:内存不够，硬盘上 -->
+<diskstore path="D:/cache"/>
+<!-- 2:defaultcahe: -->
+<!-- maxElementinMemory:最大内存多少个 -->
+<!-- eternal:对象是否永远不变 -->
+<!-- timeToIdleSeconds:空闲时间 操作对象到你不操作对象最多的时间-->
+<!-- timeToLiveSeconds:超过seconds秒后就清空-->
+<!-- overflowdisk -->
+<defaultcache   maxElementinMemory="50" eternal="false" timeToIdleSecond="50"  timeToLiveSeconds="60" overflowDisk="true"/>
+
+<!-- 3:对于那个类缓存
+
+1： 上面有，下面有，覆盖 
+2：上面没有，下面有，继承
+-->
+	<cache name="cn.ccc.bean.User" maxElementinMemory="50" eternal="false" timeToIdleSecond="50"  timeToLiveSeconds="60" overflowDisk="true"/>
+</ehcahe>

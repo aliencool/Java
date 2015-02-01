@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="GBK">
+<title>help</title>
+ <script   src="js/jquery-1.8.3.js"></script>
+<style>
+*{margin:0;padding:0} 
+html{height:100%;}
+body{background: url(images/20140612225253.jpg) center top no-repeat; }
+.back{height:100%; width:100%; position:absolute;opacity:0.5; top:0;left:0; background-
+
+color:#000;display:none }
+.tip{width:980px; height:700px; left:50%; position:absolute; margin-left:-490px;}
+.tip div{ position:absolute; background-repeat:no-repeat;display:none;}
+.tip div a{ position:absolute;width:95px; height:32px;  text-indent:-999px;overflow:hidden; cursor:pointer; }
+.tip div span{ position:absolute;width:30px; height:30px;  text-indent:-999px;overflow:hidden;cursor:pointer;}
+.stepA{ width:745px; height:329px; background: url(images/guide11.png) ;position:absolute; top:142px; left:-167px;}
+.stepA a{top:256px; left:268px;}
+.stepA span{top:167px; left:348px;}
+.stepB{width:654px; height:600px; background: url(images/guide21.png);position:absolute; top:211px; left:-183px;}
+.stepB a{top:260px; left:163px;}
+.stepB span{top:167px; left:240px;}
+.stepC{width:647px; height:405px; background:url(images/guide31.png);position:absolute; top:726px; left:-93px;}
+.stepC a{top:242px; left:450px; }
+.stepC span{top:153px; left:527px;}
+.stepC{width:647px; height:405px; background:url(images/guide31.png);position:absolute; top:726px; left:-93px;}
+.stepD a{top:271px; left:323px; }
+.stepD span{top:177px; left:400px;}
+.stepD{width:647px; height:405px; background:url(images/guide41.png);position:absolute; top:117px; left:312px;}
+.stepE a{top:199px; left:327px; }
+.stepE span{top:107px; left:220x;}
+.stepE{width:647px; height:405px; background:url(images/guide51.png);position:absolute; top:354px; left:-27px;}
+
+</style>
+<script type="text/javascript" language="javascript">
+	$(function(){
+	
+					$(".back,.tip,.tip div:eq(0)").show();
+      				  $(".tip div a").click(function(){
+					
+					$(this).parent().hide();
+					
+					$(this).parent().next().show();
+					});
+				
+				     $(".tip span,.tip>div>a:last").click(
+					function()
+					{
+						$(".back,.tip").hide();
+					}
+		           );
+				
+    });
+
+</script>
+
+
+
+
+</head>
+
+<body>
+	<div class="back"></div>
+	<div class="tip">
+    	<div class="stepA"><a></a><span title="关闭">关闭</span></div>
+    	<div class="stepB"><a></a><span title="关闭">关闭</span></div>
+        <div class="stepC"><a></a><span title="关闭">关闭</span></div>
+		<div class="stepD"><a></a><span title="关闭">关闭</span></div>
+        <div class="stepE"><a href="MessageAction?flag=-1">进入</a><span title="关闭">关闭</span></div>
+    </div>
+
+</body>
+</html>

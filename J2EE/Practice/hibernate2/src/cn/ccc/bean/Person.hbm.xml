@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="cn.ccc.bean">
+	<class name="Person"  discriminator-value="Person">
+		<id name="id">
+			<generator class="hilo"></generator>
+		</id>
+	 <discriminator column="type" type="string"/>
+	<property name="name"/>
+	<property name="sex"/>
+	<property name="age"/>
+	<!-- 第一种 :每个生成一个表 特点是 主键不能有重复 -->
+	<!-- 
+	 <union-subclass name="Student">
+	 	<property name="sno"/>
+	 	<property name="school"/>
+	 </union-subclass>
+	<union-subclass name="Teacher">
+	 	<property name="no"/>
+	 	<property name="salary" type="double"/>
+	 </union-subclass>
+	 -->
+	
+	 <!-- 第二种:使用type来区分 特点，不能指定为非空 -->
+	  <subclass name="Student" discriminator-value="Student">
+	 	<property name="sno"/>
+	 	<property name="school"/>
+	 </subclass>
+	 <subclass name="Teacher" discriminator-value="Teacher">
+	 	<property name="no"/>
+	 	<property name="salary" type="double"/>
+	 </subclass>
+	 
+	 <!-- 第三种:使用join-us  特点: 主键是其他表的主键加外键 没有空-->
+	 
+	<!--<joined-subclass name="Student">-->
+		<!-- 对应的是Person的 -->
+		<!--<key column="sid"/>
+		<property name="sno"/>
+	 	<property name="school"/>
+	</joined-subclass>
+	
+	<joined-subclass name="Teacher">-->
+		<!-- 对应的是Person的 -->
+		<!--<key column="tid"/>
+		<property name="no"/>
+	 	<property name="salary" type="double"/>
+	</joined-subclass>-->
+	</class>
+
+</hibernate-mapping>

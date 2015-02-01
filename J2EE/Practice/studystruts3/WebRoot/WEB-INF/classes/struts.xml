@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+ 
+    <struts>
+    
+    
+    <package name="actioncheck" extends="struts-default" namespace="/ActionLogin">
+    <!-- 设置拦截器 -->
+    <interceptors>
+    		<interceptor name="add" class="ActionLogincheck.Actioninterupt"/>
+    	<interceptor-stack name="CHECK">
+    	
+    	<interceptor-ref name="add"/>
+    	<interceptor-ref name="defaultStack"/>
+    	</interceptor-stack>
+    
+    </interceptors>
+    
+    
+    <global-results>
+    	<result name="login">/index.jsp</result>
+    </global-results>
+    
+    
+    
+    <action name="login" class="ActionLogin.ActionL">
+    	<result name="success" type="redirect">/success.jsp</result>
+    </action>
+    
+    <action name="adduser" class="ActionLogin.ActionL" method="adduser">
+    	<result name="success" type="redirect">/success.jsp</result>
+    	<interceptor-ref name="CHECK"/>
+    </action>
+    
+    
+    
+    
+    </package>
+    </struts>

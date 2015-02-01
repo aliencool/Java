@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://struts.apache.org/dtds/struts-config_1_3.dtd">
+ <struts-config>
+ <!-- 注意:
+ 	1:全部由父亲级别标签
+ 	2:path 有"/"  是等于form action
+  -->
+ 	<form-beans>
+ 		<form-bean name="user" type="com.test.Form.UserForm"></form-bean>
+ 	</form-beans>
+ 	<action-mappings>
+ 		<action path="/Login" name="user" type="com.test.action.LoginAction">
+ 			<forward name="error" path="/WEB-INF/error.jsp"></forward>
+ 			<forward name="welcome" path="/WEB-INF/welcome.jsp"></forward>
+ 		</action>
+ 	</action-mappings>
+ </struts-config>

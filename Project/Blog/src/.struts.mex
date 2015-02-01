@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="blog" location="10,10" size="280,140">
+    <action name="IndexAction" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="index.jsp" />
+      </result>
+    </action>
+    <action name="NewlistAction" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="newlist.jsp" />
+      </result>
+      <result name="News">
+        <resourceEdge source="News" routing="0" target="new.jsp" />
+      </result>
+    </action>
+    <action name="RedirectAction" location="0,0" size="0,0">
+      <result name="UPDATE">
+        <resourceEdge source="UPDATE" routing="0" target="customer.jsp" />
+      </result>
+      <result name="SHOW">
+        <resourceEdge source="SHOW" routing="0" target="visitorCustomer.jsp" />
+      </result>
+    </action>
+    <action name="PageAction" location="0,0" size="0,0">
+      <result name="NewList">
+        <resourceEdge source="NewList" routing="0" target="newlist.jsp" />
+      </result>
+      <result name="categorynewlist">
+        <resourceEdge source="categorynewlist" routing="0" target="categorynewlist.jsp" />
+      </result>
+      <result name="messageList">
+        <resourceEdge source="messageList" routing="0" target="detail_share.jsp" />
+      </result>
+    </action>
+    <action name="MessageAction" location="0,0" size="0,0">
+      <result name="message">
+        <resourceEdge source="message" routing="0" target="share.jsp" />
+      </result>
+      <result name="messageList">
+        <resourceEdge source="messageList" routing="0" target="detail_share.jsp" />
+      </result>
+      <result name="help">
+        <resourceEdge source="help" routing="0" target="help.html" />
+      </result>
+    </action>
+    <action name="UserAction" location="0,0" size="0,0">
+      <result name="share" />
+      <result name="error" />
+    </action>
+  </package>
+  <package name="Json" location="0,0" size="0,0">
+    <action name="JsonPage" location="0,0" size="0,0">
+      <result name="success" />
+    </action>
+  </package>
+  <webResource name="index.jsp" path="Blog/index.jsp" location="96,205" size="150,55" />
+  <webResource name="newlist.jsp" path="Blog/newlist.jsp" location="0,0" size="0,0" />
+  <webResource name="new.jsp" path="Blog/new.jsp" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="WEB-INF/Blog/index.jsp" location="0,0" size="0,0" />
+  <webResource name="newlist.jsp" path="WEB-INF/Blog/newlist.jsp" location="0,0" size="0,0" />
+  <webResource name="new.jsp" path="WEB-INF/Blog/new.jsp" location="0,0" size="0,0" />
+  <webResource name="about.jsp" path="WEB-INF/Blog/about.jsp" location="0,0" size="0,0" />
+  <webResource name="categorynewlist.jsp" path="WEB-INF/Blog/categorynewlist.jsp" location="0,0" size="0,0" />
+  <webResource name="share.jsp" path="WEB-INF/Blog/share.jsp" location="0,0" size="0,0" />
+  <webResource name="about.jsp" path="Blog/about.jsp" location="0,0" size="0,0" />
+  <webResource name="categorynewlist.jsp" path="Blog/categorynewlist.jsp" location="0,0" size="0,0" />
+  <webResource name="share.jsp" path="Blog/share.jsp" location="0,0" size="0,0" />
+  <webResource name="error.html" path="error/error.html" location="0,0" size="0,0" />
+  <webResource name="newlist.jsp" path="http://172.16.142.98:8080/MyBlog/Blog/newlist.jsp" location="0,0" size="0,0" />
+  <webResource name="new.jsp" path="http://172.16.142.98:8080/MyBlog/Blog/new.jsp" location="0,0" size="0,0" />
+  <webResource name="about.jsp" path="http://172.16.142.98:8080/MyBlog/Blog/about.jsp" location="0,0" size="0,0" />
+  <webResource name="categorynewlist.jsp" path="http://172.16.142.98:8080/MyBlog/Blog/categorynewlist.jsp" location="0,0" size="0,0" />
+  <webResource name="share.jsp" path="http://172.16.142.98:8080/MyBlog/Blog/share.jsp" location="0,0" size="0,0" />
+  <webResource name="error.html" path="http://172.16.142.98:8080/MyBlog/error/error.html" location="0,0" size="0,0" />
+  <webResource name="index.jsp" path="/Blog/index.jsp" location="0,0" size="0,0" />
+  <webResource name="detail_share.jsp" path="Blog/detail_share.jsp" location="0,0" size="0,0" />
+  <webResource name="customer.jsp" path="Customer/customer.jsp" location="0,0" size="0,0" />
+  <webResource name="visitorCustomer.jsp" path="Customer/visitorCustomer.jsp" location="0,0" size="0,0" />
+  <webResource name="help.html" path="/direct/help.html" location="0,0" size="0,0" />
+</Struts2Diagram>
+

@@ -1,0 +1,137 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #464646;
+	background-color: #2D3538;
+}
+
+#wrapper {
+	max-width: 550px;
+	min-width: 250px;
+	width: 95%;
+	margin: 20px auto 0px;
+	position: relative;
+}
+
+a { 
+    color: #4E832F; 
+	}
+a:hover { text-decoration: none; }
+#header1 {
+	height:60px;
+	background: #131313;
+}
+
+#header2 {
+	width: 500px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 920px;
+	margin: 0 auto;
+}
+#menu {
+	float: left;
+	width: 500px;
+}
+#menu ul {
+	margin: 0;
+	padding: 8px 0px 0px 0px;
+	list-style: none;
+	line-height: normal;
+}
+#menu li {
+	background: url(images/img01.jpg) no-repeat left 10px;
+	display: block;
+	float: left;
+}
+#menu a {
+	display: block;
+	float: left;
+	height: 32px;
+	padding: 14px 20px 0px 20px;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+#menu a:hover { 
+	text-decoration: none; 
+}
+
+#font1{
+	display: block;
+	float: left;
+	height: 32px;
+	padding: 14px 20px 0px 20px;
+	letter-spacing: -1px;
+	text-decoration: none;
+	text-align: center;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+#page {
+	width: 1000px;
+	margin: 0px auto;
+	margin: 0 auto;
+	background:  #2D3538;
+}
+
+#page-bgtop {
+	width: 920px;
+	margin: 0px auto;
+	padding: 40px 40px;
+}
+#content {
+	float: left;
+	width: 610px;
+}
+.post {
+	margin-bottom: 45px;
+	padding-bottom: 30px;
+	border-bottom: 0px solid #E0E0E0;
+}
+
+.post .title {
+	height: 44px;
+	padding-left: 40px;
+	font-size: 30px;
+	color:#64BC31;
+}
+h1{
+	text-align:center;
+	font-size:36px;
+	color:#64BC31;
+}
+H2{
+	height: 10px;
+	background:no-repeat left 3px;
+	font-size: 20px;
+	color:#639;
+}
+.post .meta {
+	margin-left: 2px;
+	padding: 4px 30px 2px 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 10px;
+	color: #66665E;
+}
+.post .meta a {
+	text-decoration: none;
+}
+
+.post .entry {
+	padding: 10px 0px 0px 0px;
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+    <struts>
+    	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+    	<package name="action_all"  extends="struts-default">
+    		<!-- 添加 -->
+    		<action name="add" class="org.sise.control.add_action">
+    			<result type="redirect">http://172.16.142.98:8080/Struts2_Hibernate/admin/tab/tab.jsp</result>
+    			<result name="input">/admin/tab/tab_add.jsp</result>
+    		</action>
+    		<!-- 显示一个信息 -->
+    		<action name="show" class="org.sise.control.show_action">
+    			
+    			<result>/details.jsp</result>
+    			<!-- 删除或者修改 -->
+    		</action>
+    			
+    			<action name="implement" class="org.sise.control.implement_action">
+    			
+    			<result type="redirect">http://172.16.142.98:8080/Struts2_Hibernate/admin/tab/tab.jsp</result>
+    			<result name="input"  type="redirect">/admin/tab/tab.jsp</result>
+    			<!-- 中介 -->
+    		</action>
+    			
+    			<action name="intermediary" class="org.sise.control.update_intermediary_action">
+    			<result>/admin/tab/tab_up.jsp</result>
+    		</action>
+    		
+
+    			<!--模糊查找 -->
+    			<action name="Search" class="org.sise.control.Search_action">
+    			<result>/Search.jsp</result>
+    		</action>
+    		
+    		
+    	</package>
+    </struts>
+

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+	
+<hibernate-mapping package="Bean">
+	<class name="Nickname" >
+		<id name="user_id" >
+			<generator class="native"/>
+		</id>
+		<property name="Nickname_name"/>
+		<property name="Nickname_password"/>
+		
+		<!-- 一对多 -->
+		<!-- 放入到set<account>中的集合 列对应的是user_id  -->
+		<set name="account" table="Account" inverse="false">
+			<key column="user_id" />
+			<one-to-many class="Account"/>
+		</set>
+		
+	</class>
+
+</hibernate-mapping>

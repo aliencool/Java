@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>欢迎来到留言板</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen, projection">
+
+</head>
+
+<body>
+    <header>
+		<h1>欢迎访问留言板</h1>
+	</header>
+    <div id="wrapper">
+    <ul id="form-section">
+			<form class="sign-in-form" action="" method="post">
+			<li>
+				<label>
+					<span>用户名</span>
+					<input placeholder="请输入你的用户名" name="username" pattern="[a-zA-Z0-9]{6,}" type="text" tabindex="1" required autofocus>
+				</label>
+			</li>
+			<li>
+				<label>
+					<span>主题</span>
+					<input placeholder="请输入主题" name="password" pattern=".{6,}" type="password" tabindex="2" required>
+				</label>
+			</li>
+            <li>
+				<label>
+					<span>内容</span>
+					<textarea  placeholder="请输入内容" pattern=".{6,}"  name="content" rows="10" cols="40" tabindex="2" required></textarea>
+				</label>
+			</li>
+	        <li>
+				<label class="left-column">
+					<input type="submit" class="send-message" value="发表">
+				</label>
+				<label class="right-column">
+					<input type="reset" class="reset-message" value="重置">
+				</label>
+			</li>
+
+			<div style="clear: both;"></div>
+			</form>
+            </ul>
+ </div>
+ <div id="footer">
+<p>Copyright (c) Feng. All rights reserved. Design by FengCheung </p>
+</div>
+</body>
+</html>

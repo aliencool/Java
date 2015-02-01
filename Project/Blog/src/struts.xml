@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+   <struts>
+	
+   	 
+   	<package  name="Blog" extends="struts-default">
+
+   	
+   	<interceptors>
+   			<interceptor name="base" class="cn.courtier.ActionInterrupt.Baic_Interrupt"/>
+   			<interceptor name="first" class="cn.courtier.ActionInterrupt.Head_Interrupt"/>
+   			<interceptor name="second" class="cn.courtier.ActionInterrupt.Second_Interrupt"/>
+   			<interceptor name="third" class="cn.courtier.ActionInterrupt.Third_Interrupt"/>
+   			<!-- 基本拦截器 -->
+   			<interceptor-stack name="base_Interrupt">
+   				<interceptor-ref name="base"/>
+   				<interceptor-ref name="defaultStack"/>
+   			</interceptor-stack>
+   			
+   			<!-- 首页拦截器 -->
+   			<interceptor-stack name="Head_Interrupt">
+   				<interceptor-ref name="first"/>
+   				<interceptor-ref name="base"/>
+   				<interceptor-ref name="defaultStack"/>
+   			</interceptor-stack>
+   			<!-- 留言板 -->
+   			<interceptor-stack name="Second_Interrupt">
+   				<interceptor-ref name="second"/>
+   				<interceptor-ref name="base"/>
+   				<interceptor-ref name="defaultStack"/>
+   			</interceptor-stack>
+   			<!-- 会员表 -->
+   			<interceptor-stack name="Third_Interrupt">
+   				<interceptor-ref name="third"/>
+   				<interceptor-ref name="base"/>
+   				<interceptor-ref name="defaultStack"/>
+   			</interceptor-stack>
+   			
+   	</interceptors>
+   		
+   		<global-results><result type="redirect" name="login">http://localhost:8080/Blog/login/login.jsp</result></global-results>
+   	
+   	<action  name="IndexAction" class="IndexAction">
+   		
+   	<interceptor-ref name="Head_Interrupt"/>
+   	<result>Blog/index.jsp</result>
+   	</action>
+    
+    <action name="NewlistAction" class="NewlistAction">
+    	<interceptor-ref name="base_Interrupt"/>
+    	<result>Blog/newlist.jsp</result>
+    	<result name="News">Blog/new.jsp</result>
+    </action>
+   	
+   	 <action name="RedirectAction" class="RedirectAction">
+    	<result name="UPDATE">Customer/customer.jsp</result>
+    	<result name="SHOW">Customer/visitorCustomer.jsp</result>
+    	<interceptor-ref name="Third_Interrupt"></interceptor-ref>
+    </action>
+   	
+   	<action name="PageAction" class="PageAction">
+   		<interceptor-ref name="base_Interrupt"/>
+    	<result name="NewList">Blog/newlist.jsp</result>
+    	<result name="categorynewlist">Blog/categorynewlist.jsp</result>
+    	<result name="messageList">Blog/detail_share.jsp</result>
+    </action>
+    
+    
+    <action name="MessageAction" class="MessageAction">
+    	<result name="message">Blog/share.jsp</result>
+    	<result name="messageList">Blog/detail_share.jsp</result>
+    	<result name="help">/direct/help.html</result>
+    	<interceptor-ref name="Second_Interrupt"/>
+    </action>
+    
+    <action name="UserAction" class="UserAction">
+    	<result name="share" type="redirect">MessageAction</result>
+    	<result name="updata" type="redirect">RedirectAction</result>
+    	<result name="error" type="redirect">error/error.html</result>
+    </action>
+   	
+   	</package>
+   	
+   	<package name="Json" extends="json-default">
+   		<action name="JsonPage" class="JsonPage">
+   			<result type="json"><param name="root">jsonArray</param></result>
+   		</action>
+   	</package>
+   	
+   </struts>

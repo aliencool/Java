@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="action_all" location="10,10" size="280,140">
+    <action name="add" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="tab.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="tab_add.jsp" />
+      </result>
+    </action>
+    <action name="show" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="details.jsp" />
+      </result>
+    </action>
+    <action name="implement" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="tab.jsp" />
+      </result>
+      <result name="input">
+        <resourceEdge source="input" routing="0" target="tab.jsp" />
+      </result>
+    </action>
+    <action name="intermediary" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="tab_up.jsp" />
+      </result>
+    </action>
+    <action name="Search" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="search_index.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="main.jsp" path="admin/main.jsp" location="93,205" size="150,55" />
+  <webResource name="tab.jsp" path="http://172.16.142.98:8080/Struts2_Hibernate/admin/tab/tab.jsp" location="0,0" size="0,0" />
+  <webResource name="tab_add.jsp" path="/admin/tab/tab_add.jsp" location="0,0" size="0,0" />
+  <webResource name="details.jsp" path="/details.jsp" location="0,0" size="0,0" />
+  <webResource name="tab.jsp" path="/admin/tab/tab.jsp" location="0,0" size="0,0" />
+  <webResource name="tab_up.jsp" path="/admin/tab/tab_up.jsp" location="0,0" size="0,0" />
+  <webResource name="search_index.jsp" path="search_index.jsp" location="0,0" size="0,0" />
+</Struts2Diagram>
+

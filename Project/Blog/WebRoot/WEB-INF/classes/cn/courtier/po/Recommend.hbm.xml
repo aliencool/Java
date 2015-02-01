@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="cn.courtier.po">
+	<class name="Recommend" table="Recommend">
+	
+		<id name="r_Id" type="int">
+			<column name="r_Id" length="10"/>
+			<generator class="native"/>
+		</id>
+		<!-- 一个用户对应一个文章 -->
+	<many-to-one unique="true" name="bid" class="cn.courtier.po.BlogContent" cascade="all"/>
+	    
+	    
+	   
+	    
+	
+	</class>	
+
+</hibernate-mapping>

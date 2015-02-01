@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="Dao">
+	<class name="student" table="student">
+		<id name="id" unsaved-value="0" type="int">
+			<column name="id"/>
+			<generator class="native"/>
+		</id>
+	<property name="sno" type="string"/>
+	<property name="sname" type="string"/>
+	<property name="age" type="int"/>
+	<property name="sex" type="string"/>
+	</class>
+
+
+</hibernate-mapping>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_5_CONTAINER"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/asm-3.3.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/asm-commons-3.3.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/asm-tree-3.3.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/commons-lang3-3.1.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/freemarker-2.3.19.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/javassist-3.11.0.GA.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/ognl-3.0.6.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/struts2-core-2.3.8.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/studystruts2/WebRoot/WEB-INF/lib/xwork-core-2.3.8.jar"/>
+	<classpathentry kind="lib" path="H:/Material/机器扩展/MySql安装软件/mysql-connector-java-5.0.4-bin.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/ZH_4/WebRoot/WEB-INF/lib/jstl.jar"/>
+	<classpathentry kind="lib" path="F:/javapj/ZH_4/WebRoot/WEB-INF/lib/standard.jar"/>
+	<classpathentry kind="lib" path="H:/学习/jdom-1.1/jdom-1.1/build/jdom.jar" sourcepath="C:/Users/Administrator/.m2/repository/org/jdom/jdom/1.1/jdom-1.1-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>
