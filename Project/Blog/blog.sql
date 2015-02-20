@@ -4,7 +4,7 @@ Source Host     : localhost:3306
 Source Database : blog
 Target Host     : localhost:3306
 Target Database : blog
-Date: 2015-01-24 19:06:40
+Date: 2015-02-20 22:42:33
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -160,10 +160,9 @@ CREATE TABLE `bloguser` (
 -- ----------------------------
 -- Records of bloguser
 -- ----------------------------
-INSERT INTO `bloguser` VALUES ('1', null, null, null, null, '1', '1', '1', null, null, '0', null, '0', null);
-INSERT INTO `bloguser` VALUES ('2', 'aa', 'aa', 'aa123', null, '123', null, '1991-11', 'fsdfsdf', 'upload/image/1402829881724BbsImg140006979096298_594-418.jpg', '0', null, '0', 'aasuperkey@163.com');
-INSERT INTO `bloguser` VALUES ('3', 'admin', 'aa123', 'aa6988032', null, '', null, '1991-11', '', 'upload/image/123.jpg', '0', null, '0', 'aasuperkey@163.com');
-INSERT INTO `bloguser` VALUES ('4', 'fuck', 'fuck', '11111', null, '', null, '1999-11', '', 'upload/image/1402768895456考试时间表.png', '0', null, '0', 'fcuk@fuck.fuck');
+INSERT INTO `bloguser` VALUES ('2', 'aa', 'aa', 'aa123', null, '123', null, '1991-11', 'fsdfsdf', 'upload/image/32772943820130529213355074.jpg', '0', null, '0', 'aasuperkey@163.com');
+INSERT INTO `bloguser` VALUES ('3', 'admin', 'aa123', 'aa6988032', null, '', null, '1991-11', '', 'upload/image/32772943820130529213355074.jpg', '0', null, '0', 'aasuperkey@163.com');
+INSERT INTO `bloguser` VALUES ('4', 'fuck', 'fuck', '11111', null, '', null, '1999-11', '', 'upload/image/32772943820130529213355074.jpg', '0', null, '0', 'fcuk@fuck.fuck');
 
 -- ----------------------------
 -- Table structure for category
